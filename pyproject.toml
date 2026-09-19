@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fastapi-docker-poetry"
+version = "0.1.0"
+description = "Exercício de containerização FastAPI com Poetry"
+authors = ["Seu Nome <seu.email@exemplo.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.28.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
