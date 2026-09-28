@@ -9,7 +9,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./app:/src/app
+      - ./app:/app/app
     environment:
       - ENV=Desenvolvimento
       - PORT=8000
